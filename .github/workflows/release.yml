@@ -34,7 +34,6 @@ jobs:
 
       - name: Save to Release
         uses: xresloader/upload-to-github-release@v1
-        if: ${{ github.event.release.prerelease == true }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
